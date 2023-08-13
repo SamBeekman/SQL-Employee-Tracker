@@ -19,19 +19,16 @@ VALUES
 ('Junior Finger Painter', 20000, 5),
 ('Senior Arts and Crafts', 40000, 5);
 
--- may need to be asynch
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES
-('Olivia', 'Smith', 2, NULL),
-('Emma', 'Williams', 4, NULL),
-('Ava', 'Taylor', 6, NULL),
-('Isabella', 'Martinez', 8, NULL),
-('Sophia', 'Anderson', 10, NULL);
+('Olivia', 'Smith', 1, NULL),
+('Emma', 'Williams', 2, NULL),
+('Ava', 'Taylor', 3, NULL),
+('Isabella', 'Martinez', 4, NULL),
+('Sophia', 'Anderson', 5, NULL),
+('Liam', 'Johnson', 6, 1),
+('Noah', 'Brown', 7, 2),
+('Ethan', 'Jones', 8, 3),
+('Lucas', 'Davis', 9, 4),
+('Oliver', 'Wilson', 10, 5);
 
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES
-('Liam', 'Johnson', 1, 2),
-('Noah', 'Brown', 3, 4),
-('Ethan', 'Jones', 5, 6),
-('Lucas', 'Davis', 7, 8),
-('Oliver', 'Wilson', 9, 10);

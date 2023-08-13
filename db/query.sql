@@ -1,3 +1,5 @@
+--Working File
+
 -- WHEN I choose to view all departments
 -- THEN I am presented with a formatted table showing department names and department ids
 SELECT id AS `Department ID`, name AS `Department Name` FROM department;
@@ -9,8 +11,9 @@ SELECT title AS `Job Title`, role.id AS `Role ID`, department.name AS 'Departmen
 
 -- WHEN I choose to view all employees
 -- THEN I am presented with a formatted table showing employee data, including employee ids, first names, last names, job titles, departments, salaries, and managers that the employees report to
+
 -- Not sure how to select managers name instead of just their reference number???
-SELECT employee.id AS `Employee ID`, first_name AS `First Name`, last_name AS `Last Name`, role.title AS `Job Title`, department.name AS 'Department', salary AS 'Salary', employee.manager_id AS 'Manager' FROM employee JOIN role ON employee.role_id = role.id JOIN department ON role.department_id = department.id ORDER BY employee.id ASC;
+SELECT employee.id AS `Employee ID`, employee.first_name AS `First Name`, employee.last_name AS `Last Name`, role.title AS `Job Title`, department.name AS 'Department', salary AS 'Salary', CONCAT(Manager.first_name, ' ', Manager.last_name) AS 'Manager' FROM employee JOIN role ON employee.role_id = role.id JOIN department ON role.department_id = department.id LEFT JOIN employee AS Manager ON employee.manager_id = Manager.id ORDER BY employee.id ASC;
 
 -- WHEN I choose to add a department
 -- THEN I am prompted to enter the name of the department and that department is added to the database
@@ -29,6 +32,8 @@ INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('first
 
 -- WHEN I choose to update an employee role
 -- THEN I am prompted to select an employee to update and their new role and this information is updated in the database
+
+SELECT * FROM employee
 UPDATE employee
 SET role_id = 0
 WHERE employee.id = 1;

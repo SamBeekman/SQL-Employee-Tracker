@@ -20,12 +20,17 @@ The purpose of this project was top build a content management system (CMS) to m
 
 ## Installation
 
-To install this application, clone the github repo and open in VS Code. Then open the integrated terminal ane run 'npm i' to install the packages.
+To install this application, clone the github repo and open in VS Code. Then open the integrated terminal and run 'npm i' to install the packages. Once packages are installed run 'mysql -u root -p' and enter then password 'root' in the terminal to run SQL. Then copy and paste the contents of 'schema.sql' followed by 'seeds.sql' into the terminal to load the database and the seeds. Alternatively, you can run the files from the terminal using SOURCE and then the file path.
 
 
 ## Usage
 
 Once, packages are installed, run 'npm start' and follow the prompts.
+
+Video link to walkthrough: https://drive.google.com/file/d/1bUdacP2OaKCRt2u9OKynCrsvB8udpKFV/view
+
+![Untitled](https://github.com/SamBeekman/SQL-Employee-Tracker/assets/131665093/f02259c0-f84b-4b01-8bf3-6e74795f4a8a)
+
 
 
 ## Contributing

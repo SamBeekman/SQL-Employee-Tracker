@@ -22,6 +22,10 @@ The purpose of this project was top build a content management system (CMS) to m
 
 To install this application, clone the github repo and open in VS Code. Then open the integrated terminal and run 'npm i' to install the packages. Once packages are installed run 'mysql -u root -p' and enter then password 'root' in the terminal to run SQL. Then copy and paste the contents of 'schema.sql' followed by 'seeds.sql' into the terminal to load the database and the seeds. Alternatively, you can run the files from the terminal using SOURCE and then the file path.
 
+This apllication uses:
+- inquirer 8.2.4
+- mysql2 3.6.0
+
 
 ## Usage
 

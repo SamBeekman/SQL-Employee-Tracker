@@ -1,8 +1,11 @@
+-- delete database if it exists then create new database
 DROP DATABASE IF EXISTS cms_db;
 CREATE DATABASE cms_db;
 
+-- use the database
 USE cms_db;
 
+-- create the 3 tables for the database
 CREATE TABLE department(
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(30) 

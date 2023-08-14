@@ -1,3 +1,4 @@
+-- fill the 3 tables with their respective seed data
 INSERT INTO department (name)
 VALUES
 ('IT'),
